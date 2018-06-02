@@ -29,5 +29,11 @@ public class sentaku : MonoBehaviour {
         {
             SceneManager.LoadScene("Easy");
         }
+
+        if (Input.GetKeyUp(KeyCode.Escape))
+        {
+            Debug.Log("ゲームを終了します");
+            Application.Quit();
+        }
     }
 }
