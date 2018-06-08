@@ -47,7 +47,7 @@ public class Rotate : MonoBehaviour {
                 }
          */
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             xRotate = Mathf.Clamp(xRotate + adRotate*Time.deltaTime,-30,30);
             transform.eulerAngles = new Vector3(xRotate, 0, zRotate);
@@ -72,7 +72,7 @@ public class Rotate : MonoBehaviour {
             }
             */
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
             xRotate = Mathf.Clamp(xRotate - adRotate*Time.deltaTime,-30,30);
             transform.eulerAngles = new Vector3(xRotate,0,zRotate);
@@ -97,7 +97,7 @@ public class Rotate : MonoBehaviour {
             }
             */
         }
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             zRotate = Mathf.Clamp(zRotate + adRotate * Time.deltaTime, -30, 30);
             transform.eulerAngles = new Vector3(xRotate, 0, zRotate);
@@ -122,7 +122,7 @@ public class Rotate : MonoBehaviour {
             }
             */
         }
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             zRotate = Mathf.Clamp(zRotate - adRotate * Time.deltaTime, -30, 30);
             transform.eulerAngles = new Vector3(xRotate, 0, zRotate);
