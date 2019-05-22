@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Surinukebousi : MonoBehaviour {
+public class surinukebousi : MonoBehaviour {
 
-    private new Rigidbody rigidbody;
-    public AudioClip don;
+    public new Rigidbody rigidbody;
+    public AudioClip soundCol;
     AudioSource audioSource;
 
 	// Use this for initialization
@@ -22,6 +22,6 @@ public class Surinukebousi : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        audioSource.PlayOneShot(don);
+        audioSource.PlayOneShot(soundCol);
     }
 }
