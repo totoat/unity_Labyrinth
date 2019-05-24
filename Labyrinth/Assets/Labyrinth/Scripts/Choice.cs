@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 
 public class Choice : MonoBehaviour {
-
+    
     public GameObject allowH;
     private Renderer rendE;
     private Renderer rendH;
+    
     public AudioClip soundChoice;
     public AudioClip soundDecision;
     AudioSource audioSource;
@@ -19,7 +20,7 @@ public class Choice : MonoBehaviour {
         rendH = allowH.GetComponent<Renderer>();
         rendE.enabled = true;
         rendH.enabled = false;
-
+        
         audioSource = this.GetComponent<AudioSource>();
     }
 	
@@ -43,6 +44,7 @@ public class Choice : MonoBehaviour {
         {
             audioSource.PlayOneShot(soundDecision);
         }
+
         if (Input.GetKeyUp(KeyCode.Return))
         {
             if (rendE.enabled)

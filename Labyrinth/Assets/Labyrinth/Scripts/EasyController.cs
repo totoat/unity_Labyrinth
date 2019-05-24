@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EasyController : MonoBehaviour {
 
@@ -33,5 +34,9 @@ public class EasyController : MonoBehaviour {
             transform.eulerAngles = new Vector3(xRotate, 0, zRotate);
         }
 
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Tittle");
+        }
     }
 }
