@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Surinukebousi : MonoBehaviour {
+public class Surinuke : MonoBehaviour {
 
     private new Rigidbody rigidbody;
     public AudioClip don;

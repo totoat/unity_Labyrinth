@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotate : MonoBehaviour {
+public class EasyController : MonoBehaviour {
 
     public float adRotate = 100;
     private float zRotate = 0;
