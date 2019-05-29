@@ -3,8 +3,13 @@
 漫画NEWGAME6巻で出てきた玉転がし迷路のゲームを再現しようとしたものです．
 まだいろいろ作りかけでEasyモードしか作ってないです
 
-【使い方】
-\Labyrinthフォルダをunityで開けばいろいろ編集できます．
+【Unityエディターで開く場合】
+\LabyrinthフォルダがProjectフォルダになっています
+Unityから\Labyrinthフォルダを開けば編集できます
+
+【バージョン】Unity 2017.4.27f1
+
+【ゲームの起動の仕方】
 \Labyrinth\exe 内の「exe.exe」を実行すればゲームが起動します．
 \Labyrinth\WebGL 内の 「index.html」を実行すればブラウザ上でゲームが起動します．
 
