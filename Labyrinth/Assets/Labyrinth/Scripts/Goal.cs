@@ -5,6 +5,7 @@ using UnityEngine;
 public class Goal : MonoBehaviour {
 
      public GameObject goalUI;
+
     AudioSource audioSource;
     public AudioClip clearFanfare;
 

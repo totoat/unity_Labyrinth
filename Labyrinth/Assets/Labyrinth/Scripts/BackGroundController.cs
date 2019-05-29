@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BackGroundController : MonoBehaviour {
 	
-	// Update is called once per frame
+	// 背景をスクロールさせる
 	void Update () {
         float scroll = Mathf.Repeat(Time.time*0.2f,1);
         Vector2 offset = new Vector2(scroll,0);
