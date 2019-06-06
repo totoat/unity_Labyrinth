@@ -1,7 +1,7 @@
 # unity_Labyrinth
 【概要】<br>
-漫画NEWGAME6巻で出てきた玉転がし迷路のゲームを再現しようとしたものです．<br>
-まだいろいろ作りかけでEasyモードしか作ってないです <br>
+漫画NEWGAME6巻で出てきた玉転がし迷路のゲームを再現しようとしたものです<br>
+Game自体はまだEasyモードしか作ってないです <br>
 
 【Unityエディターで開く場合】<br>
 \LabyrinthフォルダがProjectフォルダになっています <br>
@@ -11,8 +11,9 @@ Unityから\Labyrinthフォルダを開けば編集できます <br>
 Unity 2017.4.27f1 <br>
 
 【ゲームの起動の仕方】<br>
-\Labyrinth\exe 内の「exe.exe」を実行すればゲームが起動します．<br>
-\Labyrinth\WebGL 内の 「index.html」を実行すればブラウザ上でゲームが起動します．<br>
+\. 内の「Labyrinth.exe」を実行すればゲームが起動します．<br>
+\.\WebGL 内の 「index.html」を実行すればブラウザ上でゲームが起動します．<br>
+(Google Chromeではゲームが起動しないことを確認しました) <br>
 
 【ゲームの操作方法】<br>
 
