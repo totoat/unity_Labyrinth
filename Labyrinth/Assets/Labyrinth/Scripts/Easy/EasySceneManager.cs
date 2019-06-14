@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class EasySceneManager : MonoBehaviour {
+
+    public Button NextButton;
 
     // BackTitleアイコンに呼ばれる
     public void OnClickBack()
@@ -14,7 +17,14 @@ public class EasySceneManager : MonoBehaviour {
     // Reloadアイコンに呼ばれる
     public void OnClickReload()
     {
-        SceneManager.LoadScene("Easy");
+        string nowScene = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(nowScene);
+    }
+
+    // Nextアイコンに呼ばれる
+    public void OnClickNext()
+    {
+        SceneManager.LoadScene("Hard");
     }
 
     // キー入力
@@ -22,11 +32,15 @@ public class EasySceneManager : MonoBehaviour {
     {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
-            SceneManager.LoadScene("Title");
+            OnClickBack();
         }
         if (Input.GetKeyUp(KeyCode.R))
         {
-            SceneManager.LoadScene("Easy");
+            OnClickReload();
+        }
+        if (Input.GetKeyUp(KeyCode.Return))
+        {
+            OnClickNext();
         }
     }
 

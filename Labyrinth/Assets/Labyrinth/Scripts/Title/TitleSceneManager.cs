@@ -33,7 +33,7 @@ public class TitleSceneManager : MonoBehaviour {
     public void OnClickH()
     {
         audioSource.PlayOneShot(soundDecision);
-        SceneManager.LoadScene("Easy");
+        SceneManager.LoadScene("Hard");
     }
 
     // キー入力
@@ -76,7 +76,7 @@ public class TitleSceneManager : MonoBehaviour {
             }
             if (rendH.enabled)
             {
-                SceneManager.LoadScene("Easy");
+                SceneManager.LoadScene("Hard");
             }
         }
 
