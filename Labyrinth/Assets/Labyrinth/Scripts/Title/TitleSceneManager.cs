@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class TitleSceneManager : MonoBehaviour {
     
-    public GameObject allowH;
+    [SerializeField] GameObject allowH;
     private Renderer rendE;
     private Renderer rendH;
     
-    public AudioClip soundChoice;
-    public AudioClip soundDecision;
+    [SerializeField] AudioClip soundChoice;
+    [SerializeField] AudioClip soundDecision;
     AudioSource audioSource;
 
 	void Start () {

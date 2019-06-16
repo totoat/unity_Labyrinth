@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class Goal : MonoBehaviour {
 
-    public GameObject GoalUI;
-    public Button NextButton;
+    [SerializeField] GameObject GoalUI;
+    [SerializeField] Button NextButton;
     // アイコンText (TextComponentとしてではなくGameObjectとして取得)
     private GameObject IconNextOn;
     private GameObject IconNextOff;
 
     AudioSource audioSource;
-    public AudioClip clearFanfare;
+    [SerializeField] AudioClip clearFanfare;
 
     void Start () {
         // Nextボタンの子オブジェクト

@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class GoalHard : MonoBehaviour
 {
 
-    public GameObject GoalUI;
+    [SerializeField] GameObject GoalUI;
 
     AudioSource audioSource;
-    public AudioClip clearFanfare;
+    [SerializeField] AudioClip clearFanfare;
 
     void Start()
     {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EasyController : MonoBehaviour {
 
-    public float adRotate = 100;
+    [SerializeField] float adRotate = 100;
     private float zRotate = 0;
     private float xRotate = 0;
     private Vector3 tempPos;

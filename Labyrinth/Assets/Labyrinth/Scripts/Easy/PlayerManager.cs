@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour {
 
     private new Rigidbody rigidbody;
-    public AudioClip don;
+    [SerializeField] AudioClip don;
     AudioSource audioSource;
 
 

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class EasySceneManager : MonoBehaviour {
 
-    public Button NextButton;
+    [SerializeField] Button NextButton;
 
     // BackTitleアイコンに呼ばれる
     public void OnClickBack()
