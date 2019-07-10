@@ -4,9 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class EasySceneManager : MonoBehaviour {
-
-    [SerializeField] Button NextButton;
+public class HardSceneManager : MonoBehaviour
+{
 
     // BackTitleアイコンに呼ばれる
     public void OnClickBack()
@@ -21,12 +20,6 @@ public class EasySceneManager : MonoBehaviour {
         SceneManager.LoadScene(nowScene);
     }
 
-    // Nextアイコンに呼ばれる
-    public void OnClickNext()
-    {
-        SceneManager.LoadScene("Hard");
-    }
-
     // キー入力
     public void Update()
     {
@@ -37,14 +30,6 @@ public class EasySceneManager : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.R))
         {
             OnClickReload();
-        }
-        if (Input.GetKeyUp(KeyCode.Return))
-        {
-            if (NextButton.interactable)
-            {
-                OnClickNext();
-            }
-
         }
     }
 
